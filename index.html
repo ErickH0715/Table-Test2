@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario Semanal del Estudiante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f6f6f6;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      text-align: center;
+      padding: 10px;
+    }
+    th {
+      background-color: #007bff;
+      color: #fff;
+    }
+    /* Primera columna de horas */
+    td.time {
+      background-color: #e9ecef;
+      font-weight: bold;
+      width: 10%;
+    }
+    /* Estilo general para el bloque de clase */
+    .class-block {
+      padding: 5px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #000;
+    }
+    /* Colores específicos para cada curso/laboratorio */
+    .cs335 {
+      background-color: #AEDFF7; /* Azul claro */
+    }
+    .md303 {
+      background-color: #C8E6C9; /* Verde claro */
+    }
+    .cs426 {
+      background-color: #FFCC80; /* Naranja claro */
+    }
+    .md352 {
+      background-color: #CE93D8; /* Morado claro */
+    }
+    .md313 {
+      background-color: #F8BBD0; /* Rosa claro */
+    }
+    .cs240 {
+      background-color: #FFF59D; /* Amarillo claro */
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- 9:00 AM -->
+      <tr>
+        <td class="time">9:00 AM</td>
+        <td>
+          <div class="class-block cs335">CS335 [JH1]</div>
+        </td>
+        <td>
+          <div class="class-block cs426">CS426 [CS1]</div>
+        </td>
+        <td></td>
+        <td>
+          <div class="class-block cs240">CS240 [CH]</div>
+        </td>
+        <td></td>
+      </tr>
+      <!-- 10:00 AM -->
+      <tr>
+        <td class="time">10:00 AM</td>
+        <td>
+          <div class="class-block cs335">CS335 [Lab]</div>
+        </td>
+        <td>
+          <div class="class-block cs335">CS335 [Lab]</div>
+        </td>
+        <td>
+          <div class="class-block md352">MD352 [Kairos]</div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <!-- 11:00 AM -->
+      <tr>
+        <td class="time">11:00 AM</td>
+        <td>
+          <div class="class-block cs335">CS335 [Lab]</div>
+        </td>
+        <td></td>
+        <td>
+          <div class="class-block md352">MD352 [Kairos]</div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <!-- 12:00 PM -->
+      <tr>
+        <td class="time">12:00 PM</td>
+        <td>
+          <div class="class-block md303">MD303 [CS2]</div>
+        </td>
+        <td></td>
+        <td>
+          <div class="class-block md313">MD313 [Iontas]</div>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <!-- 1:00 PM (franja sin actividades) -->
+      <tr>
+        <td class="time">1:00 PM</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <!-- 2:00 PM -->
+      <tr>
+        <td class="time">2:00 PM</td>
+        <td></td>
+        <td>
+          <div class="class-block cs426">CS426 [CS2]</div>
+        </td>
+        <td></td>
+        <td>
+          <div class="class-block cs240">CS240 [TH1]</div>
+        </td>
+        <td></td>
+      </tr>
+      <!-- 3:00 PM -->
+      <tr>
+        <td class="time">3:00 PM</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <div class="class-block cs240">CS240 [Lab]</div>
+        </td>
+        <td></td>
+      </tr>
+      <!-- 4:00 PM -->
+      <tr>
+        <td class="time">4:00 PM</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <div class="class-block cs240">CS240 [Lab]</div>
+        </td>
+        <td></td>
+      </tr>
+      <!-- 5:00 PM -->
+      <tr>
+        <td class="time">5:00 PM</td>
+        <td>
+          <div class="class-block cs335">CS335 [TH1]</div>
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
